@@ -85,6 +85,7 @@
             this.button3.Size = new System.Drawing.Size(191, 42);
             this.button3.TabIndex = 17;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -110,6 +111,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form4";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form4";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

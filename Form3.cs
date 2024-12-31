@@ -17,9 +17,40 @@ namespace DataStructures
             InitializeComponent();
         }
 
-        private void Form3_Load(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
+            Form1 f1 = new Form1();
+            f1.Show();
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            f2.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form4 f4 = new Form4();
+            f4.Show();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Form4 f4 = new Form4();
+            f4.Show();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Form4 f4 = new Form4();
+            f4.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Form4 f4 = new Form4();
+            f4.Show();
         }
     }
 }

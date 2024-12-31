@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,14 +18,17 @@ namespace DataStructures
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
+            string value = checkBox1.Text;
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-
+            Form1 f1 = new Form1();
+            f1.Show();
         }
     }
+        
 }
