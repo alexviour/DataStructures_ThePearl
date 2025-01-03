@@ -19,8 +19,10 @@ namespace DataStructures
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form3 f3 = new Form3();
-            f3.Show();
+                Form3 form3 = new Form3();
+                form3.UserInputValue = textBox1.Text;
+                form3.Show();
+                this.Hide();
         }
     }
 }

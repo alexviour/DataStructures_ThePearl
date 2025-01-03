@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace DataStructures
 {
     public partial class Form3 : Form
     {
+        public string UserInputValue { get; set; }
+
         public Form3()
         {
             InitializeComponent();
@@ -31,26 +34,32 @@ namespace DataStructures
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Form4 f4 = new Form4();
-            f4.Show();
+            Form4 form4 = new Form4 { SharedValue = UserInputValue };
+            this.Hide();
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            Form4 f4 = new Form4();
-            f4.Show();
+            Form4 form4 = new Form4 { SharedValue = UserInputValue };
+            form4.Show();
+            this.Hide();
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            Form4 f4 = new Form4();
-            f4.Show();
+            Form4 form4 = new Form4 { SharedValue = UserInputValue };
+            form4.Show();
+            this.Hide();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            Form4 f4 = new Form4();
-            f4.Show();
+            Form4 form4 = new Form4 { SharedValue = UserInputValue };
+            form4.Show();
+            this.Hide();
+        }
+        public void retainName(string name) {
+            string Username = name;
         }
     }
 }
