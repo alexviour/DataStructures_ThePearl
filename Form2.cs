@@ -60,7 +60,7 @@ namespace DataStructures
             }
             else
             {
-                MessageBox.Show("There's no task to undo.");
+                MessageBox.Show("All tasks are finished.");
             }
         }
 
@@ -79,7 +79,7 @@ namespace DataStructures
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click_1(object sender, EventArgs e)
         {
             Form1 f1 = new Form1();
             f1.Show();

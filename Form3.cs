@@ -35,6 +35,7 @@ namespace DataStructures
         private void button6_Click(object sender, EventArgs e)
         {
             Form4 form4 = new Form4 { SharedValue = UserInputValue };
+            form4.Show();
             this.Hide();
         }
 
@@ -61,5 +62,7 @@ namespace DataStructures
         public void retainName(string name) {
             string Username = name;
         }
+
+      
     }
 }

@@ -18,7 +18,7 @@ namespace DataStructures
             listBox1.Items.Clear();
 
             listBox1.Items.Add("Nazzer Damiao");
-            listBox1.Items.Add("Ma Lourdes Alexandra Reyes");
+            listBox1.Items.Add("Ma. Lourdes Alexandra Reyes");
             listBox1.Items.Add("Joel Bueno");
             listBox1.Items.Add("Mhia Legal");
             listBox1.Items.Add("Noemi Alon");
@@ -48,6 +48,43 @@ namespace DataStructures
             
         }
 
+        
+
+        private void pictureBox20_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox22_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox23_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox24_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.Show();
+        }
     }
 }
 
