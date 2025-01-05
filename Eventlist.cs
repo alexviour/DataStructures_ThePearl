@@ -43,7 +43,10 @@ namespace DataStructures
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            dgvEvents.Rows.Add(18, "Concert ni mhi");
+            dgvEvents.Rows.Add(15, "Artificial Intellligence Symposium");
+            dgvEvents.Rows.Add(18, "Cybersecurity Conference");
+            dgvEvents.Rows.Add(25, "Machine Learning Seminar");
+            dgvEvents.Rows.Add(30, "Web Development Workshop");
 
         }
 
@@ -51,9 +54,10 @@ namespace DataStructures
         {
             if (e.RowIndex >= 0)
             {
-                var cellValue = dgvEvents.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
-                EventDetails eventDetails = new EventDetails();
-                eventDetails.getEvent(cellValue);
+                var eventTime = dgvEvents.Rows[e.RowIndex].Cells[0].Value.ToString(); 
+                var eventDescription = dgvEvents.Rows[e.RowIndex].Cells[1].Value.ToString(); 
+                EventDetail eventDetails = new EventDetail(eventTime, eventDescription);
+
                 this.Hide();
                 eventDetails.Show();
                 this.Close();

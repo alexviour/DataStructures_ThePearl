@@ -1,6 +1,6 @@
 ﻿namespace DataStructures
 {
-    partial class EventDetails
+    partial class EventDetail
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EventDetails));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EventDetail));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.dgvEvents = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEvents)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -85,19 +87,38 @@
             this.button5.TabIndex = 20;
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // Form6
+            // dgvEvents
+            // 
+            this.dgvEvents.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvEvents.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.dgvEvents.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvEvents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEvents.GridColor = System.Drawing.SystemColors.ButtonFace;
+            this.dgvEvents.Location = new System.Drawing.Point(170, 318);
+            this.dgvEvents.Name = "dgvEvents";
+            this.dgvEvents.RowHeadersVisible = false;
+            this.dgvEvents.RowHeadersWidth = 150;
+            this.dgvEvents.RowTemplate.Height = 24;
+            this.dgvEvents.ShowCellToolTips = false;
+            this.dgvEvents.ShowEditingIcon = false;
+            this.dgvEvents.Size = new System.Drawing.Size(797, 291);
+            this.dgvEvents.TabIndex = 22;
+            // 
+            // EventDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1123, 718);
+            this.Controls.Add(this.dgvEvents);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Form6";
-            this.Text = "Form6";
+            this.Name = "EventDetail";
+            this.Text = "Detail";
             this.Load += new System.EventHandler(this.Form6_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEvents)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -108,5 +129,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.DataGridView dgvEvents;
     }
 }
