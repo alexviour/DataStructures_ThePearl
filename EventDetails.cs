@@ -13,6 +13,7 @@ namespace DataStructures
     public partial class EventDetails : Form
     {
         public string Username { get; private set; }
+        public string Event { get; private set; }
 
         public EventDetails()
         {
@@ -28,7 +29,9 @@ namespace DataStructures
         {
             this.Username = name;
         }
-
+        public void getEvent(string cellValue) { 
+            this.Event = cellValue;
+        }
 
     }
 }

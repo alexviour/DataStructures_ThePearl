@@ -32,34 +32,6 @@ namespace DataStructures
             f2.Show();
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            Seats form4 = new Seats { SharedValue = Username };
-            form4.Show();
-            this.Hide();
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-            Seats form4 = new Seats { SharedValue = Username };
-            form4.Show();
-            this.Hide();
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-            Seats form4 = new Seats { SharedValue = Username };
-            form4.Show();
-            this.Hide();
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            Seats form4 = new Seats { SharedValue = Username };
-
-            form4.Show();   
-            this.Hide();
-        }
         public void retainName(string name) {
             this.Username = name;
         }
@@ -71,7 +43,21 @@ namespace DataStructures
 
         private void Form3_Load(object sender, EventArgs e)
         {
+            dgvEvents.Rows.Add(18, "Concert ni mhi");
 
+        }
+
+        private void dgvEvents_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                var cellValue = dgvEvents.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
+                EventDetails eventDetails = new EventDetails();
+                eventDetails.getEvent(cellValue);
+                this.Hide();
+                eventDetails.Show();
+                this.Close();
+            }
         }
     }
 }

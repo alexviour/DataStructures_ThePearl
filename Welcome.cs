@@ -25,9 +25,15 @@ namespace DataStructures
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ToDo f2 = new ToDo();
-            f2.Show();
+            ToDo TD = new ToDo();
             this.Hide();
+            TD.Show();
+            this.Close();
+        }
+
+        private void Welcome_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

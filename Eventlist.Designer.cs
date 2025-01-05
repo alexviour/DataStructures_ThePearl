@@ -33,7 +33,11 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.dgvEvents = new System.Windows.Forms.DataGridView();
+            this.Day = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Event = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEvents)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -88,20 +92,55 @@
             this.button5.TabIndex = 16;
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // Form3
+            // dgvEvents
+            // 
+            this.dgvEvents.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvEvents.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.dgvEvents.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvEvents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEvents.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Day,
+            this.Event});
+            this.dgvEvents.GridColor = System.Drawing.SystemColors.ButtonFace;
+            this.dgvEvents.Location = new System.Drawing.Point(552, 329);
+            this.dgvEvents.Name = "dgvEvents";
+            this.dgvEvents.RowHeadersVisible = false;
+            this.dgvEvents.RowHeadersWidth = 150;
+            this.dgvEvents.RowTemplate.Height = 24;
+            this.dgvEvents.ShowCellToolTips = false;
+            this.dgvEvents.ShowEditingIcon = false;
+            this.dgvEvents.Size = new System.Drawing.Size(443, 275);
+            this.dgvEvents.TabIndex = 17;
+            this.dgvEvents.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEvents_CellContentClick);
+            // 
+            // Day
+            // 
+            this.Day.HeaderText = "Day";
+            this.Day.MinimumWidth = 6;
+            this.Day.Name = "Day";
+            // 
+            // Event
+            // 
+            this.Event.HeaderText = "Event";
+            this.Event.MinimumWidth = 6;
+            this.Event.Name = "Event";
+            // 
+            // Eventlist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1123, 718);
+            this.Controls.Add(this.dgvEvents);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Form3";
+            this.Name = "Eventlist";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEvents)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -112,5 +151,8 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.DataGridView dgvEvents;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Day;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Event;
     }
 }
