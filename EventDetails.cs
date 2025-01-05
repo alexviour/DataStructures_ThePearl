@@ -10,11 +10,25 @@ using System.Windows.Forms;
 
 namespace DataStructures
 {
-    public partial class Form6 : Form
+    public partial class EventDetails : Form
     {
-        public Form6()
+        public string Username { get; private set; }
+
+        public EventDetails()
         {
             InitializeComponent();
         }
+
+        private void Form6_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        public void retainName(string name)
+        {
+            this.Username = name;
+        }
+
+
     }
 }

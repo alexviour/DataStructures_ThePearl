@@ -10,22 +10,22 @@ using System.Windows.Forms;
 
 namespace DataStructures
 {
-    public partial class Form1 : Form
+    public partial class Welcome : Form
     {
-        public Form1()
+        public Welcome()
         {
             InitializeComponent();
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            Form5 f5 = new Form5();
+            EnterName f5 = new EnterName();
             f5.Show();
             this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form2 f2 = new Form2();
+            ToDo f2 = new ToDo();
             f2.Show();
             this.Hide();
         }

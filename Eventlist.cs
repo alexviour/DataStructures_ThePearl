@@ -11,58 +11,67 @@ using System.Xml.Linq;
 
 namespace DataStructures
 {
-    public partial class Form3 : Form
+    public partial class Eventlist : Form
     {
-        public string UserInputValue { get; set; }
+        public string Username;
 
-        public Form3()
+        public Eventlist()
         {
             InitializeComponent();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form1 f1 = new Form1();
+            Welcome f1 = new Welcome();
             f1.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 f2 = new Form2();
+            ToDo f2 = new ToDo();
             f2.Show();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4 { SharedValue = UserInputValue };
+            Seats form4 = new Seats { SharedValue = Username };
             form4.Show();
             this.Hide();
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4 { SharedValue = UserInputValue };
+            Seats form4 = new Seats { SharedValue = Username };
             form4.Show();
             this.Hide();
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4 { SharedValue = UserInputValue };
+            Seats form4 = new Seats { SharedValue = Username };
             form4.Show();
             this.Hide();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4 { SharedValue = UserInputValue };
-            form4.Show();
+            Seats form4 = new Seats { SharedValue = Username };
+
+            form4.Show();   
             this.Hide();
         }
         public void retainName(string name) {
-            string Username = name;
+            this.Username = name;
         }
 
-      
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

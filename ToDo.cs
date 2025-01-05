@@ -4,11 +4,11 @@ using System.Windows.Forms;
 
 namespace DataStructures
 {
-    public partial class Form2 : Form
+    public partial class ToDo : Form
     {
         private Stack<string> stack;
 
-        public Form2()
+        public ToDo()
         {
             InitializeComponent();
             stack = new Stack<string>();
@@ -81,7 +81,7 @@ namespace DataStructures
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            Form1 f1 = new Form1();
+            Welcome f1 = new Welcome();
             f1.Show();
         }
     }
