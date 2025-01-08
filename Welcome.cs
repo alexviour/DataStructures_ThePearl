@@ -16,6 +16,7 @@ namespace DataStructures
         {
             InitializeComponent();
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
             EnterName f5 = new EnterName();
@@ -28,12 +29,10 @@ namespace DataStructures
             ToDo TD = new ToDo();
             this.Hide();
             TD.Show();
-            this.Close();
         }
 
         private void Welcome_Load(object sender, EventArgs e)
         {
-
         }
     }
 }

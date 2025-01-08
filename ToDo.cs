@@ -6,7 +6,7 @@ namespace DataStructures
 {
     public partial class ToDo : Form
     {
-        private Stack<string> stack;
+        public Stack<string> stack;
 
         public ToDo()
         {
@@ -83,6 +83,14 @@ namespace DataStructures
         {
             Welcome f1 = new Welcome();
             f1.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Employee employee = new Employee();
+            this.Hide();
+            employee.Show();
+            this.Close();
         }
     }
 }

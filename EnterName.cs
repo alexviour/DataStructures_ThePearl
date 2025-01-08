@@ -5,6 +5,8 @@ namespace DataStructures
 {
     public partial class EnterName : Form
     {
+        public static string UserName;
+
         public EnterName()
         {
             InitializeComponent();
@@ -12,9 +14,8 @@ namespace DataStructures
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            string name = txtName.Text;
+            UserName = txtName.Text;
             Eventlist F3 = new Eventlist();
-            F3.retainName(name);
             this.Hide();
             F3.Show();
             this.Close();

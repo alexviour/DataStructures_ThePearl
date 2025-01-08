@@ -26,36 +26,21 @@ namespace DataStructures
             f1.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            ToDo f2 = new ToDo();
-            f2.Show();
-        }
-
-        public void retainName(string name) {
-            this.Username = name;
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form3_Load(object sender, EventArgs e)
         {
-            dgvEvents.Rows.Add(15, "Artificial Intellligence Symposium");
+            dgvEvents.Rows.Add(15, "Artificial Intelligence Symposium");
             dgvEvents.Rows.Add(18, "Cybersecurity Conference");
             dgvEvents.Rows.Add(25, "Machine Learning Seminar");
             dgvEvents.Rows.Add(30, "Web Development Workshop");
-
         }
 
         private void dgvEvents_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
             {
-                var eventTime = dgvEvents.Rows[e.RowIndex].Cells[0].Value.ToString(); 
-                var eventDescription = dgvEvents.Rows[e.RowIndex].Cells[1].Value.ToString(); 
+                string eventTime = dgvEvents.Rows[e.RowIndex].Cells[0].Value.ToString();
+                string eventDescription = dgvEvents.Rows[e.RowIndex].Cells[1].Value.ToString();
+
                 EventDetail eventDetails = new EventDetail(eventTime, eventDescription);
 
                 this.Hide();
